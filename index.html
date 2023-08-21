@@ -1,10 +1,43 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-        <title>BestBank</title>
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <script src="index.js"></script>
-    </body>
+
+<head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <title>BestBank</title>
+    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="assets/images/bestbank_logo.png" alt="BestBank logo">
+        
+        <img id="open-burger" src="assets/icons/icons8-hamburger-menu.svg">
+
+        <nav>
+            <img id="close-burger" src="assets/icons/icons8-close.svg">
+            <ul>
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Payments</a></li>
+                <li><a href="#">Savings</a></li>
+                <li><a href="#">Financing</a></li>
+                <li><a href="#">Stocks</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="btn-container">
+        <button id="pay-btn">Pay</button>
+        <button id="transfer-btn">Transfer</button>
+    </div>
+
+    <section>
+        <h2>Accounts</h2>
+        <button id="main-acct-btn">Main Account</button>
+        <button id="expenses-btn">Expenses</button>
+        <button id="savings-btn">Savings</button>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+
 </html>
