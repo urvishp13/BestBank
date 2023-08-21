@@ -29,6 +29,7 @@ header {
     align-items: center;
     padding: .75em;
     background-color: #FFF;
+    border-bottom: 1.125rem solid #FFD18C;
 }
 
 .logo {
@@ -88,4 +89,32 @@ nav a:hover {
 
 .open-nav {
     visibility: unset;
+}
+
+/* ------------------ MAIN ------------------ */
+main {
+    background-color: #FDF7F4;
+    min-height: 100vh;
+}
+
+/* ----------------- BUTTONS ---------------- */
+.btn {
+    background-color: #FFFFFF;
+    border: 5px solid #FFA724;
+    font-weight: bold;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.transaction-btn {
+    width: 75%;
+    margin-top: 1em;
+    height: 4rem;
+    border-radius: 3.125em;
+    font-size: 1.5rem;
+}
+
+.transaction-btn:hover {
+    background-color: #FFA724;
 }
