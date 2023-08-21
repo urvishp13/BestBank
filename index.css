@@ -22,18 +22,29 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
 /* ----------------- HEADER ----------------- */
 
-header {
+header .container {
     display: flex;
     align-items: center;
     padding: .75em;
     background-color: #FFF;
-    border-bottom: 1.125rem solid #FFD18C;
 }
 
 .logo {
     width: 11.5em;
+}
+
+hr {
+    background-color: #FFD18C;
+    height: 1.125rem;
+    border: none;
+    margin: 0;
 }
 
 /* ---------------- NAVIGATION ---------------- */
@@ -51,7 +62,7 @@ header {
 .close-burger {
     display: block;
     margin-left: auto;
-    padding: .75em .75em 0 0;
+    padding: .75em 1em 0 0;
 }
 
 nav {
@@ -95,10 +106,12 @@ nav a:hover {
 main {
     background-color: #FDF7F4;
     min-height: 100vh;
+    padding-top: 1.35em;
 }
 
 /* ----------------- BUTTONS ---------------- */
 .btn {
+    width: 100%;
     background-color: #FFFFFF;
     border: 5px solid #FFA724;
     font-weight: bold;
@@ -108,13 +121,14 @@ main {
 }
 
 .transaction-btn {
-    width: 75%;
-    margin-top: 1em;
+    margin-bottom: 1em;
     height: 4rem;
-    border-radius: 3.125em;
-    font-size: 1.5rem;
+    border-radius: 50px;
+    font-size: 1.35rem;
 }
 
-.transaction-btn:hover {
+.transaction-btn:hover,
+.transaction-btn:focus,
+.transaction-btn:active {
     background-color: #FFA724;
 }

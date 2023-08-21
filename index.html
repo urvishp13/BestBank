@@ -9,34 +9,38 @@
 
 <body>
     <header>
-        <img class="logo" src="assets/images/bestbank_logo.png" alt="BestBank logo">
-        
-        <img id="open-burger" class="open-burger" src="assets/icons/icons8-hamburger-menu.svg">
+        <div class="container">
+            <img class="logo" src="assets/images/bestbank_logo.png" alt="BestBank logo">
+            
+            <img id="open-burger" class="open-burger" src="assets/icons/icons8-hamburger-menu.svg">
 
-        <nav id="nav">
-            <img id="close-burger" class="close-burger" src="assets/icons/icons8-close.svg">
-            <ul>
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Payments</a></li>
-                <li><a href="#">Savings</a></li>
-                <li><a href="#">Financing</a></li>
-                <li><a href="#">Stocks</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <div class="btn-container">
-            <button class="btn transaction-btn" id="pay-btn">Pay</button>
-            <button class="btn transaction-btn" id="transfer-btn">Transfer</button>
+            <nav id="nav">
+                <img id="close-burger" class="close-burger" src="assets/icons/icons8-close.svg">
+                <ul>
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Payments</a></li>
+                    <li><a href="#">Savings</a></li>
+                    <li><a href="#">Financing</a></li>
+                    <li><a href="#">Stocks</a></li>
+                </ul>
+            </nav>
         </div>
+    </header>
+    <hr>
+    <main>
+        <div class="container">
+            <div class="btn-container">
+                <button class="btn transaction-btn" id="pay-btn">Pay</button>
+                <button class="btn transaction-btn" id="transfer-btn">Transfer</button>
+            </div>
 
-        <section>
-            <h2>Accounts</h2>
-            <button class="btn info-btn" id="main-acct-btn">Main Account</button>
-            <button class="btn info-btn" id="expenses-btn">Expenses</button>
-            <button class="btn info-btn" id="savings-btn">Savings</button>
-        </section>
+            <section>
+                <h2>Accounts</h2>
+                <button class="btn info-btn" id="main-acct-btn">Main Account</button>
+                <button class="btn info-btn" id="expenses-btn">Expenses</button>
+                <button class="btn info-btn" id="savings-btn">Savings</button>
+            </section>
+        </div>
     </main>
     
     <script src="assets/javascript/hamburger.js"></script>
