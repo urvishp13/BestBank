@@ -85,3 +85,7 @@ nav a:hover {
     font-weight: bold;
     color: black;
 }
+
+.open-nav {
+    visibility: unset;
+}
