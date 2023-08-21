@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
 /*
 COLOR PALETTE
 
@@ -14,4 +16,72 @@ DARK ORANGE: #FFA724
 html, body {
     margin: 0;
     padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* ----------------- HEADER ----------------- */
+
+header {
+    display: flex;
+    align-items: center;
+    padding: .75em;
+    background-color: #FFF;
+}
+
+.logo {
+    width: 11.5em;
+}
+
+/* ---------------- NAVIGATION ---------------- */
+.open-burger,
+.close-burger {
+    width: 2.65em;
+    cursor: pointer;
+}
+
+.open-burger {
+    margin-left: auto;
+    /* display: none; */
+}
+
+.close-burger {
+    display: block;
+    margin-left: auto;
+    padding: .75em .75em 0 0;
+}
+
+nav {
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: #FFD18C;
+    width: 65vw;
+    height: 100vh;
+    visibility: hidden;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 3em;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 1.35rem;
+    padding: .5em 1em;
+}
+
+nav a:hover {
+    background-color: #ffc164;
+}
+
+.active a {
+    font-weight: bold;
+    color: black;
 }
