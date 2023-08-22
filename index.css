@@ -66,8 +66,7 @@ header .container:first-child {
 
 .close-burger {
     display: block;
-    margin-left: auto;
-    padding: .75em 1em 0 0;
+    margin: .75em 1em 0 auto;
 }
 
 nav {
@@ -170,6 +169,15 @@ main {
         width: 13.3125em;
     }
 
+    .open-burger,
+    .close-burger {
+        width: 3.25em;
+    }
+
+    .close-burger {
+        margin: 1.5em 1.5em 0 auto;
+    }
+
     nav a {
         padding-left: 1.5em;
         font-size: 1.4rem;
@@ -202,6 +210,15 @@ main {
     
     .logo {
         width: 16.3125em;
+    }
+
+    .open-burger,
+    .close-burger {
+        width: 3.75em;
+    }
+
+    .close-burger {
+        margin: 1.65em 1.85em 0 auto;
     }
 
     nav a {
