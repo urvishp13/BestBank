@@ -18,6 +18,10 @@ html, body {
     padding: 0;
 }
 
+html {
+    background-color: #FDF7F4;
+}
+
 body {
     font-family: 'Inter', sans-serif;
 }
@@ -28,12 +32,14 @@ body {
 }
 
 /* ----------------- HEADER ----------------- */
+header {
+    background-color: #FFF;
+}
 
 header .container {
     display: flex;
     align-items: center;
     padding: .75em;
-    background-color: #FFF;
 }
 
 .logo {
