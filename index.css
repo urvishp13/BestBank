@@ -28,15 +28,17 @@ body {
 
 .container {
     width: 90%;
+    max-width: 576px;
     margin: 0 auto;
 }
 
 /* ----------------- HEADER ----------------- */
 header {
     background-color: #FFF;
+    border-bottom: 1.125rem solid #FFD18C;
 }
 
-header .container {
+header .container:first-child {
     display: flex;
     align-items: center;
     padding: .75em;
@@ -44,13 +46,6 @@ header .container {
 
 .logo {
     width: 11.5em;
-}
-
-hr {
-    background-color: #FFD18C;
-    height: 1.125rem;
-    border: none;
-    margin: 0;
 }
 
 /* ---------------- NAVIGATION ---------------- */
@@ -148,4 +143,55 @@ main {
 
 .info-btn:hover {
     background-color: #FFD18C;
+}
+
+/* --------------- MEDIA QUERIES -------------- */
+@media (min-width: 576px) {
+
+    header {
+        border: none;
+    }
+
+    header .container:first-child {
+        justify-content: center;
+        padding: 2.44em 0;
+    }
+
+    .logo {
+        height: 4.5625em;
+        width: 23.3125em;
+    }
+
+    .open-burger,
+    .close-burger {
+        display: none
+    }
+
+    nav {
+        height: auto;
+        width: auto;
+        position: initial;
+        visibility: unset;
+        padding: 1.12em 0;
+    }
+
+    nav ul {
+        display: flex;
+        margin: 0;
+    }
+
+    nav li {
+        margin: 0 auto;
+    }
+
+    nav a {
+        font-size: 1.5625rem;
+        padding: 0;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+        background-color: initial;
+    }
+
 }
