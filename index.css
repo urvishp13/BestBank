@@ -48,11 +48,16 @@ header .container:first-child {
     width: 11.5em;
 }
 
+.logo,
+.open-burger,
+.close-burger {
+    cursor: pointer;
+}
+
 /* ---------------- NAVIGATION ---------------- */
 .open-burger,
 .close-burger {
     width: 2.65em;
-    cursor: pointer;
 }
 
 .open-burger {
@@ -75,6 +80,11 @@ nav {
     visibility: hidden;
 }
 
+nav .container {
+    width: 100%;
+
+}
+
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -89,7 +99,9 @@ nav a {
     padding: .5em 1em;
 }
 
-nav a:hover {
+nav li:not(.active) a:hover,
+nav li:not(.active) a:focus,
+nav li:not(.active) a:active {
     background-color: #ffc164;
 }
 
@@ -141,11 +153,81 @@ main {
     border-radius: .65rem;
 }
 
-.info-btn:hover {
+.info-btn:hover,
+.info-btn:focus,
+.info-btn:active {
     background-color: #FFD18C;
 }
 
 /* --------------- MEDIA QUERIES -------------- */
+@media (min-width: 480px) {
+
+    header .container:first-child {
+        padding: 1.5em;
+    }
+
+    .logo {
+        width: 13.3125em;
+    }
+
+    nav a {
+        padding-left: 1.5em;
+        font-size: 1.4rem;
+    }
+
+    .btn-container {
+        display: flex;
+        gap: .98em;
+    }
+
+    h2 {
+        font-size: 1.65rem;
+    }
+
+    .transaction-btn {
+        font-size: 1.35rem;
+    }
+
+    .info-btn {
+        font-size: 1.175rem;
+    }
+
+}
+
+@media (min-width: 660px) {
+    
+    header .container:first-child {
+        padding: 1.5em;
+    }
+    
+    .logo {
+        width: 16.3125em;
+    }
+
+    nav a {
+        padding-left: 2em;
+        font-size: 1.5rem;
+    }
+
+    .btn-container {
+        display: flex;
+        gap: .98em;
+    }
+
+    h2 {
+        font-size: 1.85rem;
+    }
+
+    .transaction-btn {
+        font-size: 1.55rem;
+    }
+
+    .info-btn {
+        font-size: 1.35rem;
+    }
+
+}
+
 @media (min-width: 800px) {
 
     header {
@@ -158,7 +240,6 @@ main {
     }
 
     .logo {
-        height: 4.5625em;
         width: 23.3125em;
     }
 
@@ -175,6 +256,10 @@ main {
         padding: 1.12em 0;
     }
 
+    nav .container {
+        width: 90%;
+    }
+
     nav ul {
         display: flex;
         margin: 0;
@@ -189,12 +274,11 @@ main {
         padding: 0;
     }
 
-    nav a:hover {
-        background-color: initial;
-    }
-
-    nav li:not(.active) a:hover {
+    nav li:not(.active) a:hover,
+    nav li:not(.active) a:focus,
+    nav li:not(.active) a:active {
         text-decoration: underline;
+        background-color: initial;
     }
 
     main {
@@ -203,11 +287,6 @@ main {
 
     h2 {
         font-size: 2.5rem;
-    }
-
-    .btn-container {
-        display: flex;
-        gap: .98em;
     }
 
     .transaction-btn {
