@@ -56,7 +56,6 @@ hr {
 
 .open-burger {
     margin-left: auto;
-    /* display: none; */
 }
 
 .close-burger {
@@ -105,7 +104,6 @@ nav a:hover {
 /* ------------------ MAIN ------------------ */
 main {
     background-color: #FDF7F4;
-    min-height: 100vh;
     padding-top: 1.35em;
 }
 
@@ -123,7 +121,7 @@ main {
 .transaction-btn {
     margin-bottom: 1em;
     height: 4rem;
-    border-radius: 50px;
+    border-radius: 3.125rem;
     font-size: 1.35rem;
 }
 
@@ -131,4 +129,17 @@ main {
 .transaction-btn:focus,
 .transaction-btn:active {
     background-color: #FFA724;
+}
+
+.info-btn {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.15rem;
+    padding: 1.5em;
+    margin-bottom: .69em;
+    border-radius: .65rem;
+}
+
+.info-btn:hover {
+    background-color: #FFD18C;
 }
