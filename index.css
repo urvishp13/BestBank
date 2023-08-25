@@ -158,6 +158,17 @@ main {
     background-color: #FFD18C;
 }
 
+/* ---------------- SPENDINGS --------------- */
+.spendingBar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFD18C;
+    border-radius: 15px;
+    padding: .5em 1em;
+    margin-bottom: 1em;
+    font-weight: bold;
+}
+
 /* --------------- MEDIA QUERIES -------------- */
 @media (min-width: 480px) {
 
