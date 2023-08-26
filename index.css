@@ -126,7 +126,6 @@ main {
     border: 5px solid #FFA724;
     font-weight: bold;
     display: block;
-    margin: 0 auto;
     cursor: pointer;
 }
 
@@ -196,6 +195,7 @@ main {
 
     .btn-container {
         display: flex;
+        justify-content: center;
         gap: .98em;
     }
 
@@ -204,6 +204,7 @@ main {
     }
 
     .transaction-btn {
+        max-width: 275px;
         font-size: 1.35rem;
     }
 
