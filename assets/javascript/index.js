@@ -54,9 +54,10 @@ const setWidthOfBars = (spendingBars, account) => {
     }
 
     for (const spendingBar of spendingBars) {
-        spendingBar.style.width = `calc( ${ mathFunction( spendingBar.id ) * 100}%)`
-    }
-        
+        spendingBar.style.width = `calc( ${ mathFunction( spendingBar.id ) * 100 * 1.5}%)`
+        spendingBar.style.maxWidth = "100%"
+        spendingBar.style.minWidth = "fit-content"
+    }   
 }
 
 const mathFunction = x => 1/x
