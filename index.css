@@ -12,6 +12,12 @@ ORANGE: #FFD18C
 DARK ORANGE: #FFA724
 */
 
+*, 
+*::before, 
+*::after {
+    box-sizing: border-box;
+}
+
 
 html, body {
     margin: 0;
@@ -161,9 +167,11 @@ main {
 .spendingBar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: #FFD18C;
-    border-radius: 15px;
-    padding: .5em 1em;
+    border-radius: .9375rem;
+    height: 3.0625rem;
+    padding: 0 1.25em;
     margin-bottom: 1em;
     font-weight: bold;
 }
@@ -320,6 +328,21 @@ main {
 
     .transaction-btn {
         font-size: 1.875rem;
+    }
+
+    main .container + .container {
+        width: initial;
+        max-width: unset;
+    }
+
+    .history {
+        display: flex;
+        gap: 2.38rem;
+        padding: 0 10vw;
+    }
+
+    .history > * {
+        flex: 1;
     }
 
     .info-btn {

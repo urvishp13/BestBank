@@ -33,7 +33,7 @@ accountsEl.querySelectorAll("button")
 
         for (const spending of account.spendings) {
             html += `
-                <div id="${spendingBarNum++}" class="spendingBar">
+                <div id="${++spendingBarNum}" class="spendingBar">
                     <span class="category">${spending.category}</span> <span class="spent">${spending.spent}</span>
                 </div>
             `
@@ -54,9 +54,9 @@ const setWidthOfBars = (spendingBars, account) => {
     }
 
     for (const spendingBar of spendingBars) {
-        spendingBar.style.width = `calc( ${ mathFunction( spendingBars.length - spendingBar.id ) }em + 25%)`
+        spendingBar.style.width = `calc( ${ mathFunction( spendingBar.id ) * 100}%)`
     }
         
 }
 
-const mathFunction = x => x**2
+const mathFunction = x => 1/x
