@@ -177,6 +177,42 @@ main {
     font-weight: bold;
 }
 
+/* ----------------- MODAL -------------------- */
+main .container + .container {
+    position: relative;
+}
+
+.modal {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 85%;
+    background: #555454e8;
+    padding: .5em 1em;
+}
+
+.modal h2 {
+    margin-top: 0;
+    color: white;
+    text-shadow: 0 0 1px #555454;
+}
+
+.close-modal-wrapper {
+    text-align: right;
+}
+
+.close-modal-btn {
+    font-size: 1.125rem;
+    background: none;
+    border: 1px solid #aa1717;
+    color: #aa1717;
+    width: 1.25em;
+    cursor: pointer;
+}
+
 /* --------------- MEDIA QUERIES -------------- */
 @media (min-width: 480px) {
 
@@ -266,7 +302,7 @@ main {
 
 }
 
-@media (min-width: 800px) {
+@media (min-width: 906px) {
 
     header {
         border: none;
@@ -332,14 +368,12 @@ main {
     }
 
     main .container + .container {
-        width: initial;
-        max-width: unset;
+        max-width: 1200px;
     }
 
     .history {
         display: flex;
         gap: 2.38rem;
-        padding: 0 10vw;
     }
 
     .history > * {

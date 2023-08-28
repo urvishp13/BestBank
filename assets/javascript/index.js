@@ -1,7 +1,5 @@
 import { accounts } from "./accounts.js"
 
-const get = id => document.getElementById(id)
-
 // grab the Accounts section of the page
 const accountsEl = get("accounts")
 // grab the accounts from the accounts.js file
@@ -14,35 +12,46 @@ for (const account of accounts) {
         </button>
     `
 }
+
 accountsEl.innerHTML += html
 
-// grab the Spendings section of the page
-const spendingsEl = get("spendings")
+
 // populate the section with bars from the accounts.js file
     // everytime account is clicked, loop through each spending for the 
     // account and draw it to the DOM
+const modal = get("spendings")
+
 accountsEl.querySelectorAll("button")
-    .forEach(accountBtn => accountBtn.addEventListener("click", function() {
-        let html = ''
-        let spendingBarNum = 0
+.forEach(accountBtn => accountBtn.addEventListener("click", function() {
+    modal.style.display = "inline"
+    drawSpendingsData(accountBtn)
+}))
 
-        // clear the Spendings section of the previous data (if exists)
-        spendingsEl.innerHTML = '<h2>Spendings</h2>'
 
-        const account = accounts[accountBtn.id-1]
+// grab the Spendings modal from the page and the space to draw the spendings data
+const spendingsDataEl = get("spending-data")
 
-        for (const spending of account.spendings) {
-            html += `
-                <div id="${++spendingBarNum}" class="spendingBar">
-                    <span class="category">${spending.category}</span> <span class="spent">${spending.spent}</span>
-                </div>
-            `
-        }
+const drawSpendingsData = (accountBtn) => {
+    let html = ''
+    let spendingBarNum = 0
 
-        spendingsEl.innerHTML += html
+    // clear the Spendings section of the previous data (if exists)
+    spendingsDataEl.innerHTML = ''
 
-        setWidthOfBars(document.getElementsByClassName("spendingBar"), account)
-    }))
+    const account = accounts[accountBtn.id-1]
+
+    for (const spending of account.spendings) {
+        html += `
+            <div id="${++spendingBarNum}" class="spendingBar">
+                <span class="category">${spending.category}</span> <span class="spent">${spending.spent}</span>
+            </div>
+        `
+    }
+
+    spendingsDataEl.innerHTML += html
+
+    setWidthOfBars(document.getElementsByClassName("spendingBar"), account)
+}
 
 const setWidthOfBars = (spendingBars, account) => {
     let maxSpent = 0
