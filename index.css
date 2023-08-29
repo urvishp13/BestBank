@@ -383,4 +383,24 @@ main .container + .container {
     .info-btn {
         font-size: 1.5625rem;
     }
+
+    .modal {
+        display: inline;
+        position: initial;
+        margin: initial;
+        width: unset;
+        background: none;
+        padding: unset;
+    }
+
+    .modal h2 {
+        margin-top: revert;
+        color: initial;
+        text-shadow: none;
+    }
+    
+    .close-modal-btn {
+        display: none;
+    }
+    
 }
