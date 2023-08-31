@@ -388,7 +388,7 @@ main .container + .container {
     }
 
     .modal {
-        display: inline;
+        display: inline !important;
         position: initial;
         margin: initial;
         width: unset;
