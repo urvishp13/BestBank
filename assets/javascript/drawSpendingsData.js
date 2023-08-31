@@ -55,5 +55,3 @@ const setWidthOfBars = (spendingBars, account) => {
 }
 
 const mathFunction = x => 1/x
-
-export { spendingsEl }
