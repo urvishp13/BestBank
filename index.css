@@ -206,10 +206,11 @@ main .container + .container {
 
 .close-modal-btn {
     font-size: 1.125rem;
+    font-weight: bold;
     background: none;
-    border: 1px solid #aa1717;
+    border: 2px solid #aa1717;
     color: #aa1717;
-    width: 1.25em;
+    width: 1.5em;
     cursor: pointer;
 }
 
