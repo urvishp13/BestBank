@@ -1,5 +1,5 @@
 import { accounts } from "./accounts.js"
-import { accountsEl } from "./drawAccountsInfo.js"
+import { accountsEl, formatter } from "./drawAccountsInfo.js"
 
 // grab the Spendings section from the DOM
 const spendingsEl = get("spendings")
@@ -28,7 +28,7 @@ const drawSpendingsData = (accountBtn) => {
     for (const spending of account.spendings) {
         html += `
             <div id="${++spendingBarNum}" class="spendingBar">
-                <span class="category">${spending.category}</span> <span class="spent">${spending.spent}</span>
+                <span class="category">${spending.category}</span> <span class="spent">${ formatter.format(spending.spent) }</span>
             </div>
         `
     }
