@@ -18,7 +18,7 @@ DARK ORANGE: #FFA724
     box-sizing: border-box;
 }
 
-
+/* ---------------- LAYOUT ----------------- */
 html, body {
     margin: 0;
     padding: 0;
@@ -38,16 +38,21 @@ body {
     margin: 0 auto;
 }
 
+main {
+    background-color: #FDF7F4;
+    padding-top: 1.35em;
+}
+
 /* ----------------- HEADER ----------------- */
 header {
     background-color: #FFF;
     border-bottom: 1.125rem solid #FFD18C;
 }
 
-header .container:first-child {
+header > .container {
     display: flex;
     align-items: center;
-    padding: .75em;
+    padding: .75em 0;
 }
 
 .logo {
@@ -61,21 +66,8 @@ header .container:first-child {
 }
 
 /* ---------------- NAVIGATION ---------------- */
-.open-burger,
-.close-burger {
-    width: 2.65em;
-}
-
-.open-burger {
-    margin-left: auto;
-}
-
-.close-burger {
-    display: block;
-    margin: .75em 1em 0 auto;
-}
-
 nav {
+    display: initial;
     position: fixed;
     right: 0;
     top: 0;
@@ -83,11 +75,11 @@ nav {
     width: 65vw;
     height: 100vh;
     visibility: hidden;
+    z-index: 1;
 }
 
 nav .container {
     width: 100%;
-
 }
 
 nav ul {
@@ -115,14 +107,22 @@ nav li:not(.active) a:active {
     color: black;
 }
 
-.open-nav {
-    visibility: unset;
+.open-burger,
+.close-burger {
+    width: 2.65em;
 }
 
-/* ------------------ MAIN ------------------ */
-main {
-    background-color: #FDF7F4;
-    padding-top: 1.35em;
+.open-burger {
+    margin-left: auto;
+}
+
+.close-burger {
+    display: block;
+    margin: 5% 5% 0 auto;
+}
+
+.open-nav {
+    visibility: unset;
 }
 
 /* ----------------- BUTTONS ---------------- */
@@ -216,8 +216,12 @@ main .container + .container {
 /* --------------- MEDIA QUERIES -------------- */
 @media (min-width: 480px) {
 
-    header .container:first-child {
-        padding: 1.5em;
+    header {
+        border-bottom: 1.3rem solid #FFD18C;
+    }
+
+    header > .container {
+        padding: 1.25em 0;
     }
 
     .logo {
@@ -227,10 +231,6 @@ main .container + .container {
     .open-burger,
     .close-burger {
         width: 3.25em;
-    }
-
-    .close-burger {
-        margin: 1.5em 1.5em 0 auto;
     }
 
     nav a {
@@ -260,9 +260,13 @@ main .container + .container {
 }
 
 @media (min-width: 660px) {
+
+    header {
+        border-bottom: 1.65rem solid #FFD18C;
+    }
     
-    header .container:first-child {
-        padding: 1.5em;
+    header > .container {
+        padding: 1.5em 0;
     }
     
     .logo {
@@ -272,10 +276,6 @@ main .container + .container {
     .open-burger,
     .close-burger {
         width: 3.75em;
-    }
-
-    .close-burger {
-        margin: 1.65em 1.85em 0 auto;
     }
 
     nav a {
@@ -305,12 +305,15 @@ main .container + .container {
 @media (min-width: 906px) {
 
     header {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
         border: none;
     }
 
-    header .container:first-child {
-        justify-content: center;
-        padding: 2.44em 0;
+    .logo-link {
+        display: inline-block;
+        margin: .5em auto;
     }
 
     .logo {

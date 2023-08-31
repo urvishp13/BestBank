@@ -1,34 +1,19 @@
 import { accounts } from "./accounts.js"
+import { accountsEl } from "./drawAccountsInfo.js"
 
-// grab the Accounts section of the page
-const accountsEl = get("accounts")
-// grab the accounts from the accounts.js file
-// write them and their balance to the DOM
-let html = ''
-for (const account of accounts) {
-    html += `
-        <button class="btn info-btn" id="${account.id}">
-            <span class="title">${account.title}</span> <span class="balance">${account.balance}</span>
-        </button>
-    `
-}
+// grab the Spendings section from the DOM
+const spendingsEl = get("spendings")
 
-accountsEl.innerHTML += html
-
-
-// populate the section with bars from the accounts.js file
-    // everytime account is clicked, loop through each spending for the 
-    // account and draw it to the DOM
-const modal = get("spendings")
-
+// populate the section with drawn pictographs of "spendings" data from the accounts.js file
+    // everytime each account is clicked, draw its spending data to the DOM
 accountsEl.querySelectorAll("button")
 .forEach(accountBtn => accountBtn.addEventListener("click", function() {
-    modal.style.display = "inline"
+    spendingsEl.style.display = "inline"
     drawSpendingsData(accountBtn)
 }))
 
 
-// grab the Spendings modal from the page and the space to draw the spendings data
+// grab the space to draw the spendings data
 const spendingsDataEl = get("spending-data")
 
 const drawSpendingsData = (accountBtn) => {
