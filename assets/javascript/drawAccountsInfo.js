@@ -18,4 +18,4 @@ for (const account of accounts) {
 
 accountsEl.innerHTML += html
 
-export { accountsEl, formatter }
+export { accountsEl }

@@ -1,9 +1,9 @@
 import { accounts } from "./accounts.js"
-import { accountsEl, formatter } from "./drawAccountsInfo.js"
+import { accountsEl } from "./drawAccountsInfo.js"
 
 // grab the Spendings section from the DOM
 const spendingsEl = get("spendings")
-
+const formatter = new Intl.NumberFormat('en-US', {style: 'currency', currency: 'USD', maximumFractionDigits: 0})
 // populate the section with drawn pictographs of "spendings" data from the accounts.js file
     // everytime each account is clicked, draw its spending data to the DOM
 accountsEl.querySelectorAll("button")
