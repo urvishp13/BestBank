@@ -69,11 +69,12 @@ header > .container {
 nav {
     display: initial;
     position: fixed;
+    overflow-y: scroll;
     right: 0;
     top: 0;
     background: #FFD18C;
     width: 65vw;
-    height: 100vh;
+    height: 100%;
     visibility: hidden;
     z-index: 1;
 }
@@ -97,8 +98,7 @@ nav a {
 }
 
 nav li:not(.active) a:hover,
-nav li:not(.active) a:focus,
-nav li:not(.active) a:active {
+nav li:not(.active) a:focus {
     background-color: #ffc164;
 }
 
@@ -143,8 +143,7 @@ nav li:not(.active) a:active {
 }
 
 .transaction-btn:hover,
-.transaction-btn:focus,
-.transaction-btn:active {
+.transaction-btn:focus {
     background-color: #FFA724;
 }
 
@@ -158,8 +157,7 @@ nav li:not(.active) a:active {
 }
 
 .info-btn:hover,
-.info-btn:focus,
-.info-btn:active {
+.info-btn:focus {
     background-color: #FFD18C;
 }
 
