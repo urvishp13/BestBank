@@ -1,21 +1,34 @@
-# cocf84a259acc922196ded766
+# Best Bank
 
-Quick start:
+A web app that has the power to check your Accounts' information as well as how much has been spent in each account. It has a nice, sleek, futuristic look. Check it out!
 
-```
-$ npm install
-$ npm start
-````
+Live site: [https://bestbank.netlify.app/](https://bestbank.netlify.app/)
 
-Head over to https://vitejs.dev/ to learn more about using vite
-## About Scrimba
+<hr>
 
-At Scrimba our goal is to create the best possible coding school at the cost of a gym membership! 💜
-If we succeed with this, it will give anyone who wants to become a software developer a realistic shot at succeeding, regardless of where they live and the size of their wallets 🎉
-The Frontend Developer Career Path aims to teach you everything you need to become a Junior Developer, or you could take a deep-dive with one of our advanced courses 🚀
+This project is from the Scrimba Frontend Development bootcamp with many
+enhancements:
 
-- [Our courses](https://scrimba.com/allcourses)
-- [The Frontend Career Path](https://scrimba.com/learn/frontend)
-- [Become a Scrimba Pro member](https://scrimba.com/pricing)
+Requirements<br>
+✅ Build it from "scratch" (using a Figma file)<br>
+✅ Follow the design<br>
+✅ Make sure you use:<br>
+    * Semantic HTML<br>
+    * Hover effects<br>
+    * Container div<br>
+    * Group selectors<br>
+    * Compound selectors
 
-Happy Coding!
+Stretch Goals<br>
+✅ Column with spending bars<br>
+✅ Fetch data from JS<br>
+✅ Click on account to change view
+
+My Additions<br>
+✅ Make responsive<br>
+✅ Add a hamburger menu for mobile view<br>
+✅ Make spending bars responsive<br>
+✅ Convert the Spending section to a modal for smaller screen devices with exit option
+
+
+
