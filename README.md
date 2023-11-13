@@ -13,11 +13,11 @@ Requirements<br>
 ✅ Build it from "scratch" (using a Figma file)<br>
 ✅ Follow the design<br>
 ✅ Make sure you use:<br>
-    * Semantic HTML<br>
-    * Hover effects<br>
-    * Container div<br>
-    * Group selectors<br>
-    * Compound selectors
+    1. Semantic HTML<br>
+    2. Hover effects<br>
+    3. Container div<br>
+    4. Group selectors<br>
+    5. Compound selectors
 
 Stretch Goals<br>
 ✅ Column with spending bars<br>
